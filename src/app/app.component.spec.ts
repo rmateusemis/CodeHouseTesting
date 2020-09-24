@@ -11,14 +11,21 @@ describe('AppComponent', () => {
   }));
 
   it('should create the app', () => {
+    
+    /// Situacion inicial
     const fixture = TestBed.createComponent(AppComponent);
+    
+    // Creación de la aplicación
     const app = fixture.componentInstance;
+    
+    // Comprobar que la aplicación ha sido creada
     expect(app).toBeTruthy();
   });
 
   it(`should have as title 'codehouse-testing'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
+    
     expect(app.title).toEqual('codehouse-testing');
   });
 
